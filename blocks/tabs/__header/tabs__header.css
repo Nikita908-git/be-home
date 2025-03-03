@@ -1,0 +1,9 @@
+.tabs__header {
+  border-bottom: var(--border);
+}
+
+@media (width <= 63.99875rem) {
+  .tabs__header {
+    overflow-x: auto;
+  }
+}

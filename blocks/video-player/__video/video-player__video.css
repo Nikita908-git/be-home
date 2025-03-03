@@ -1,0 +1,14 @@
+.video-player__video {
+  width: 100%;
+  height: clamp(13.125rem, 9.055785124rem + 16.694214876vw, 25.75rem);
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.75rem;
+  border: var(--border);
+}
+
+@media (width <= 90.06125rem) {
+  .video-player__video {
+    border-radius: 0.625rem;
+  }
+}

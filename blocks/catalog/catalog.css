@@ -1,0 +1,9 @@
+.catalog {
+  display: grid;
+}
+
+.catalog a {
+  justify-self: center;
+  max-width: 18.75rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,6 @@
+.button-accent {
+  font-weight: 500;
+  color: var(--color-light);
+  background-color: var(--color-accent);
+  border-radius: 0.5rem;
+}

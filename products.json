@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Вязанная игрушка",
+    "price": 350,
+    "category": "toys",
+    "image": "./images/products/toys1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Погремушка Лисичка",
+    "price": 125,
+    "category": "toys",
+    "image": "./images/products/toys2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Заколка новогодняя",
+    "price": 50,
+    "category": "accessory",
+    "image": "./images/products/accessory1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Плетенный ободок",
+    "price": 75,
+    "category": "accessory",
+    "image": "./images/products/accessory2.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Вязанная кофта",
+    "price": 300,
+    "category": "clothes",
+    "image": "./images/products/clothes1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Вязанный костюм",
+    "price": 600,
+    "category": "clothes",
+    "image": "./images/products/clothes2.jpg"
+  }
+]

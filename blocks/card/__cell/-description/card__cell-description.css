@@ -1,0 +1,9 @@
+.card__cell-description {
+  color: var(--color-light);
+}
+
+@media (width <= 30.06125rem) {
+  .card__cell-description {
+    font-size: 0.875rem;
+  }
+}

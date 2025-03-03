@@ -1,0 +1,18 @@
+.section__header-inner {
+  display: grid;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+@media (width >= 47.99875rem) {
+  .section__header-inner {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+@media (width <= 47.99875rem) {
+  .section__header-inner {
+    row-gap: 1.875rem;
+  }
+}

@@ -1,0 +1,18 @@
+.card__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.25rem, 0.645661157rem + 2.479338843vw, 3.125rem) 1.25rem;
+}
+
+@media (width <= 90.06125rem) {
+  .card__grid {
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+}
+
+@media (width <= 30.06125rem) {
+  .card__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

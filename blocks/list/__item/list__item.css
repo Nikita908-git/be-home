@@ -1,0 +1,8 @@
+.list__item {
+  background-color: var(--color-main);
+  color: var(--color-light);
+}
+
+.list__item:not(:last-child) {
+  border-bottom: var(--border);
+}

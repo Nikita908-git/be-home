@@ -1,0 +1,11 @@
+.socials__link {
+  --size: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+}
+
+@media (width <= 90.06125rem) {
+  .socials__link {
+    --size: 1.25rem;
+  }
+}

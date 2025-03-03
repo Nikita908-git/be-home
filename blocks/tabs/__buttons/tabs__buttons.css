@@ -1,0 +1,14 @@
+.tabs__buttons {
+  display: inline-flex;
+  padding: 0.625rem;
+  background-color: var(--color-main-dark);
+  border-radius: 0.625rem;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+}
+@media (width <= 63.99875rem) {
+  .tabs__buttons {
+    width: -moz-max-content;
+    width: max-content;
+  }
+}

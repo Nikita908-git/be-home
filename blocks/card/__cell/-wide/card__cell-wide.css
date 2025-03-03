@@ -1,0 +1,9 @@
+.card__cell-wide {
+  grid-column: -1/1;
+}
+
+@media (width <= 30.06125rem) {
+  .card__cell-wide-on-mobile-s {
+    grid-column: -1/1;
+  }
+}

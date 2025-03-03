@@ -1,0 +1,24 @@
+.card__cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: clamp(0.25rem, -0.0723140496rem + 1.3223140496vw, 1.25rem);
+}
+
+.card__cell:has(> *:only-child) {
+  justify-content: center;
+}
+
+.card__cell.tile {
+  padding: clamp(1.25rem, 1.048553719rem + 0.826446281vw, 1.875rem);
+}
+
+@media (width <= 30.06125rem) {
+  .card__cell:not(.tile) {
+    grid-template: initial;
+  }
+
+  .card__cell:not(.tile) .card__cell-link {
+    grid-area: initial;
+  }
+}

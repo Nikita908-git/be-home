@@ -1,0 +1,30 @@
+.video-player__play-button {
+  --size: 4.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--size);
+  height: var(--size);
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: var(--color-light);
+}
+
+@media (any-hover: hover) {
+  .video-player__play-button:hover {
+    color: var(--color-accent);
+  }
+}
+
+@media (any-hover: none) {
+  .video-player__play-button:active {
+    color: var(--color-accent);
+  }
+}
+
+@media (width <= 90.06125rem) {
+  .video-player__play-button {
+    --size:3.125rem;
+  }
+}

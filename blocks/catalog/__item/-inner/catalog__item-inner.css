@@ -1,0 +1,6 @@
+.catalog__item-inner {
+  margin: 0;
+  padding: 1.25rem 1.25rem 0.125rem;
+  display: grid;
+  row-gap: 0.3125rem;
+}

@@ -1,0 +1,7 @@
+@media (width <= 47.99875rem) {
+  .header__contact-us-link {
+    width: 100%;
+    max-width: 15.625rem;
+    align-self: center;
+  }
+}

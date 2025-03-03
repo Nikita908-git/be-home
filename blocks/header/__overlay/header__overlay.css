@@ -1,0 +1,25 @@
+@media (width >= 47.99875rem) {
+  .header__overlay {
+    display: contents;
+  }
+}
+
+@media (width <= 47.99875rem) {
+  .header__overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3rem;
+    padding: 1rem;
+    background-color: var(--color-main-dark);
+    transition-duration: var(--transition-duration);
+  }
+  
+  .header__overlay:not(.is-active) {
+    opacity: 0;
+    visibility: hidden;
+    translate: 100%;
+  }
+}

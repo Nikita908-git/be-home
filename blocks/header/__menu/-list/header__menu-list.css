@@ -1,0 +1,20 @@
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+@media (width <= 90.06125rem) {
+  .header__menu-list {
+    -moz-column-gap: 0.375rem;
+         column-gap: 0.375rem;
+  }
+}
+
+@media (width <= 47.99875rem) {
+  .header__menu-list {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}

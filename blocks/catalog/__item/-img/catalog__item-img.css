@@ -1,0 +1,4 @@
+.catalog__item-img {
+  border: var(--border);
+  border-radius: 0.75rem;
+}

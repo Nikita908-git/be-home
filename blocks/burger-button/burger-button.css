@@ -1,0 +1,23 @@
+.burger-button {
+  width: 2.125rem;
+  height: 2.125rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.53125rem 0.265625rem;
+  color: var(--color-light);
+  background-color: transparent;
+  border: none;
+}
+
+@media (any-hover: hover) {
+  .burger-button:hover {
+    color: var(--color-main-light);
+  }
+}
+
+@media (any-hover: none) {
+  .burger-button:active {
+    color: var(--color-main-light);
+  }
+}
