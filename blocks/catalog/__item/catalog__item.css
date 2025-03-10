@@ -1,0 +1,12 @@
+.catalog__item {
+  min-width: 18.75rem;
+  background-color: var(--color-main);
+  color: var(--color-light);
+  border-radius: 0.75rem;
+  display: grid;
+  box-shadow: var(--shadow-light);
+}
+
+.catalog__item:hover {
+  scale: 1.025;
+}

@@ -1,0 +1,12 @@
+.socials__list {
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+@media (width <= 90.06125rem) {
+  .socials__list {
+    -moz-column-gap: 0.875rem;
+         column-gap: 0.875rem;
+  }
+}

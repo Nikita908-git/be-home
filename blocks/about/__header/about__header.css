@@ -1,0 +1,17 @@
+.about__header {
+  display: grid;
+  align-items: center;
+  gap: 1.875rem clamp(1.25rem, 0.041322314rem + 4.958677686vw, 5rem);
+}
+
+@media (width <= 90.06125rem) {
+  .about__header {
+    row-gap: 1.25rem;
+  }
+}
+
+@media (width <= 47.99875rem) {
+  .about__header {
+    row-gap: 0.25rem;
+  }
+}

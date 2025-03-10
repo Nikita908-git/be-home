@@ -1,0 +1,4 @@
+.about__inner {
+  display: grid;
+  row-gap: clamp(2.5rem, 1.291322314rem + 4.958677686vw, 6.25rem);
+}

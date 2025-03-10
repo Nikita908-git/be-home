@@ -1,0 +1,52 @@
+.tabs__buttons .tabs__button {
+  padding-block: 1.125rem;
+  color: var(--color-light);
+}
+
+.tabs__buttons .tabs__button.is-active {
+  background-color: var(--color-main-light);
+}
+
+@media (width <= 90.06125rem) {
+  .tabs__buttons .tabs__button {
+    padding-block: 0.875rem;
+  }
+}
+
+.tabs__button {
+  padding: clamp(1.125rem, 0.8832644628rem + 0.9917355372vw, 1.875rem) 0.6875rem;
+  color: var(--color-light);
+  background-color: var(--color-main);
+  border: var(--border);
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+}
+
+@media (width <= 90.06125rem) {
+  .tabs__button {
+    font-size: 0.875rem;
+  }
+}
+
+@media (any-hover: hover) {
+  .tabs__button:hover {
+    color: var(--color-main-light);
+    background-color: inherit;
+    border-color: var(--color-main-light);
+  }
+}
+
+@media (any-hover: none) {
+  .tabs__button:active {
+    color: var(--color-main-light);
+    background-color: inherit;
+    border-color: var(--color-main-light);
+  }
+}
+
+.tabs__button.is-active {
+  color: var(--color-light);
+  font-weight: 500;
+  background-color: var(--color-dark);
+  pointer-events: none;
+}

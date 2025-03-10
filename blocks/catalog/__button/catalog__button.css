@@ -1,0 +1,21 @@
+.catalog__button {
+  position: sticky;
+  bottom: 1rem; 
+  right: 1rem;
+  margin-left: auto; 
+  z-index: 10; 
+  margin-block: 0.75rem;
+  max-width: 18.75rem;
+}
+
+.catalog__button:hover {
+  background-color: var(--color-main-dark);
+  scale: 1.025;
+  box-shadow: var(--shadow-light);
+}
+
+@media (width <= 47.99875rem) {
+  .catalog__button {
+    margin-block: 0.5rem;
+  }
+}

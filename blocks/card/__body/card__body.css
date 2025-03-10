@@ -1,0 +1,15 @@
+.card__body {
+  padding: 5rem;
+}
+
+@media (width <= 90.06125rem) {
+  .card__body {
+    padding: 3.75rem;
+  }
+}
+
+@media (width <= 63.99875rem) {
+  .card__body {
+    padding: 1.875rem 0;
+  }
+}

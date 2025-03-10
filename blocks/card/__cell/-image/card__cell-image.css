@@ -1,0 +1,13 @@
+.card__cell-image {
+  width: 100%;
+  height: clamp(10.5625rem, 7.2789256198rem + 13.4710743802vw, 20.75rem);
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+@media (width <= 90.06125rem) {
+  .card__cell-image {
+    border-radius: 0.625rem;
+  }
+}

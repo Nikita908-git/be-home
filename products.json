@@ -1,0 +1,170 @@
+[
+  {
+    "id": 999,
+    "name": "Набор (игрушка, 2 заколки, бант)",
+    "price": 700,
+    "category": "set",
+    "image": "./images/products/set1.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Костюм (бежевый)",
+    "price": 500,
+    "category": "clothes",
+    "image": "./images/products/clothes4.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Кролик в комбинезоне",
+    "price": 250,
+    "category": "toys",
+    "image": "./images/products/toys3.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Заколки-банты",
+    "price": 40,
+    "category": "accessory",
+    "image": "./images/products/accessory3.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Погремушка мишка",
+    "price": 100,
+    "category": "toys",
+    "image": "./images/products/toys6.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Набор (игрушка, погремушка)",
+    "price": 300,
+    "category": "set",
+    "image": "./images/products/set3.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Платье (белое)",
+    "price": 500,
+    "category": "clothes",
+    "image": "./images/products/clothes5.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Костюм (голубой)",
+    "price": 600,
+    "category": "clothes",
+    "image": "./images/products/clothes1.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Шапка с помпоном",
+    "price": 200,
+    "category": "clothes",
+    "image": "./images/products/clothes3.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Костюм (бордовый)",
+    "price": 600,
+    "category": "clothes",
+    "image": "./images/products/clothes2.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Грызунок-шуршалка",
+    "price": 80,
+    "category": "toys",
+    "image": "./images/products/toys5.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Набор (игрушка, 2 грызунка)",
+    "price": 550,
+    "category": "set",
+    "image": "./images/products/set2.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Погремушка лисичка",
+    "price": 100,
+    "category": "toys",
+    "image": "./images/products/toys2.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Кролик с морковью",
+    "price": 300,
+    "category": "toys",
+    "image": "./images/products/toys4.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Платье (серое)",
+    "price": 500,
+    "category": "clothes",
+    "image": "./images/products/clothes6.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Цветочный ободок",
+    "price": 75,
+    "category": "accessory",
+    "image": "./images/products/accessory2.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Заколки-банты",
+    "price": 45,
+    "category": "accessory",
+    "image": "./images/products/accessory5.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Зверушка",
+    "price": 200,
+    "category": "toys",
+    "image": "./images/products/toys1.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Заколки-банты",
+    "price": 50,
+    "category": "accessory",
+    "image": "./images/products/accessory6.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Заколка новогодняя",
+    "price": 75,
+    "category": "accessory",
+    "image": "./images/products/accessory4.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Заколка новогодняя",
+    "price": 50,
+    "category": "accessory",
+    "image": "./images/products/accessory1.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Подарочный сертификат на 300р",
+    "price": 275,
+    "category": "certificate",
+    "image": "./images/products/certificate1.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Подарочный сертификат на 400р",
+    "price": 375,
+    "category": "certificate",
+    "image": "./images/products/certificate1.jpg"
+  },
+  {
+    "id": 999,
+    "name": "Подарочный сертификат на 500р",
+    "price": 475,
+    "category": "certificate",
+    "image": "./images/products/certificate1.jpg"
+  }
+]

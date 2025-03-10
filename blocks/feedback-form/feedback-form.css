@@ -1,0 +1,10 @@
+.feedback-form {
+  display: grid;
+  gap: clamp(1.25rem, 0.645661157rem + 2.479338843vw, 3.125rem) 3.125rem;
+}
+
+@media (width >= 30.06125rem) {
+  .feedback-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

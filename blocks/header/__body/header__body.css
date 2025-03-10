@@ -1,0 +1,5 @@
+.header__body {
+  padding-block: clamp(0.75rem, 0.6694214876rem + 0.3305785124vw, 1rem);
+  background-color: var(--color-main-dark);
+  color: var(--color-light);
+}

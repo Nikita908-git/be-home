@@ -1,0 +1,24 @@
+.catalog__controls {
+  padding: 0.625rem;
+  margin-block: 0.3125rem;
+  background-color: var(--color-main-dark);
+  border-radius: 0.75rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  
+  gap: 0.3125rem;
+}
+
+.catalog__controls * {
+  border-color: var(--color-main);
+}
+
+.catalog__controls *::-moz-placeholder {
+  color: var(--color-main);
+}
+
+.catalog__controls *::placeholder {
+  color: var(--color-main);
+}

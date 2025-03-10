@@ -1,0 +1,5 @@
+.catalog__item-inner {
+  margin: 0;
+  display: grid;
+  row-gap: 0.3125rem;
+}

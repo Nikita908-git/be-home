@@ -1,0 +1,7 @@
+.header__logo {
+  max-width: clamp(2.8125rem, 2.5103305785rem + 1.2396694215vw, 3.75rem);
+}
+
+.header__logo:hover {
+  scale: 1.05;
+}

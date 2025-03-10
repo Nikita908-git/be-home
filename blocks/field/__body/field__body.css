@@ -1,0 +1,13 @@
+.field__body {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  width: 100%;
+}
+
+@media (width <= 90.06125rem) {
+  .field__body {
+    -moz-column-gap: 0.75rem;
+         column-gap: 0.75rem;
+  }
+}

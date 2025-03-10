@@ -1,0 +1,4 @@
+.catalog__item-title {
+  color: var(--color-light);
+  padding-inline: 0.5rem;
+}

@@ -1,0 +1,3 @@
+.section__header {
+  padding-block: clamp(2.5rem, 0.8884297521rem + 6.6115702479vw, 7.5rem);
+}

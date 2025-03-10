@@ -1,0 +1,19 @@
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 18.75rem);
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  row-gap: 2.5rem;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+@media (width <= 47.99875rem) {
+  .catalog__list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+}

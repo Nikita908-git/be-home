@@ -1,0 +1,44 @@
+.select__option {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  padding: 0.625rem;
+  border: var(--border);
+  border-radius: inherit;
+}
+
+.select__option * {
+  pointer-events: none;
+}
+
+@media (any-hover: hover) {
+  .select__option:hover {
+    color: var(--color-accent);
+    background-color: var(--color-main-light);
+  }
+}
+
+@media (any-hover: none) {
+  .select__option:active {
+    color: var(--color-accent);
+    background-color: var(--color-main-light);
+  }
+}
+
+.select__option.is-selected {
+  color: var(--color-accent);
+}
+
+.select__option.is-selected::after {
+  content: "✔";
+}
+
+.select__option.is-current {
+  border-color: var(--color-accent);
+}

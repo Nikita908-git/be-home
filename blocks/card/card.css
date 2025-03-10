@@ -1,0 +1,12 @@
+.card:has(form) {
+  background: url('../../images/from-bg.jpg') center/cover no-repeat;
+}
+
+@media (width >= 63.99875rem) {
+  .card {
+    display: grid;
+  }
+}
+
+
+

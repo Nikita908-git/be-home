@@ -1,0 +1,11 @@
+.section__header-info {
+  display: grid;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+@media (width <= 90.06125rem) {
+  .section__header-info {
+    row-gap: 0.625rem;
+  }
+}

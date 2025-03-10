@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be Home | Блог</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./scripts/main.js" type="module"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+</head>
+<body>
+  <header class="header" data-js-header>
+    <div class="header__body">
+      <div class="header__body-inner container">
+        <a 
+          href="./index.html" 
+          class="header__logo"
+          aria-label="Home"
+          title="Home"
+        >
+          <img 
+            src="./images/logo.svg" 
+            alt="Логотип Be Home"
+            class="header__logo-image"
+            width="60" height="60"
+          >
+        </a>
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="./index.html" class="header__menu-link">
+                  Главная
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./about.html" class="header__menu-link">
+                  О нас                
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./blog.html" class="header__menu-link is-active">
+                  Блог                
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="./contacts.html" class="header__contact-us-link button button-accent">
+            Контакты
+          </a>
+        </div>
+        <button 
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section 
+      class="section tabs" 
+      aria-labelledby="reports-title" 
+      data-js-tabs
+    >
+      <header class="section__header">
+        <div class="section__header-inner container">
+          <div class="section__header-info">
+            <p class="section__subtitle tag">
+              Наш блог
+            </p>
+            <h1 class="section__title" id="reports-title">
+              Вдохновение и идеи для творчества
+            </h1>
+          </div>
+          <div class="section__actions">
+            <div 
+              class="tabs__buttons" 
+              role="tablist"
+              aria-labelledby="reports-title"
+            >
+              <button 
+                class="tabs__button is-active"
+                id="tab-1"
+                type="button"
+                role="tab"
+                aria-controls="tabpanel-1"
+                data-js-tabs-button
+                aria-selected="true"
+              >
+                Все
+              </button>
+              <button 
+                class="tabs__button"
+                id="tab-2"
+                type="button"
+                role="tab"
+                aria-controls="tabpanel-2"
+                data-js-tabs-button
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Мастер-классы
+              </button>
+              <button 
+                class="tabs__button"
+                id="tab-3"
+                type="button"
+                role="tab"
+                aria-controls="tabpanel-3"
+                data-js-tabs-button
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Секреты мастерства
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="section__body" >
+        <div class="tabs__body">
+          <div 
+            class="tabs__content is-active" 
+            id="tabpanel-1"
+            aria-labelledby="tab-1"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            <ul class="list">  
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-9.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          Игрушка "Спящий мышонок"
+                        </h2>
+                        <p class="card__cell-description">
+                          Простой мастер-класс по созданию игрушки в смешанной технике своими руками
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2025-03">Март 2025</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Мастер-классы
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Разное Рукоделие
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-7.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          ✓ Моя история вязания + 5 советов начинающим вязальщицам мастерицам 🌿
+                        </h2>
+                        <p class="card__cell-description">
+                          История о моём старте в вязании и некоторые советы, которые поомгут начинающим вязальщицам мастерицам.
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2025-03">Март 2025</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Секреты мастерства
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Вязание для Вас 🌿
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-8.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          КАК делать милые украшения? 🍥
+                        </h2>
+                        <p class="card__cell-description">
+                          так как я веду свой магазин милых корейских украшений- держите туториал на милый брелок! 🍧 заранее спасибо за просмотр ♡︎
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2024-06">Июль 2024</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Секреты мастерства
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          bylishh¡
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-1.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          Трендовое колье из жемчуга и цепей своими руками
+                        </h2>
+                        <p class="card__cell-description">
+                          Сегодня я покажу, как сделать трендовое колье из жемчуга, цепочек и бусин – все накрутить, навертеть и получится очень модно! В одном украшении будут интересно смотреться разные материалы и размеры бусин, цепочки потолще, цепочки потоньше, можно взять не одну, а две или три нити разного жемчуга – начните творить и дайте волю своей фантазии
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2024-03">Март 2024</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Мастер-классы
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Greenbird
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-5.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          Плюшевая собачка за 30 минут
+                        </h2>
+                        <p class="card__cell-description">
+                          Добро пожаловать на наше видео по вязанию собачки крючком одной деталью из плюшевой пряжи! В этом уроке мы покажем вам, как создать милого и приятного цельновязаного щенка, который станет отличным подарком.
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2024-02">Февраль 2024</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Мастер-классы
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Inna MK
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-2.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          Ежик из носков своими руками
+                        </h2>
+                        <p class="card__cell-description">
+                          Милый ежик из носков 🦔🧦 Игрушка из носков своими руками
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2022-08">Август 2022</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Мастер-классы
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Moth Art
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-3.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          Создание украшений для начинающих: Инструменты и фурнитура
+                        </h2>
+                        <p class="card__cell-description">
+                          Привет! Я Настя и с моими видео вы научитесь создавать самые крутые украшения! 📿
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2021-11">Ноябрь 2021</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Секреты мастерства
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Sainty Mood
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-4.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          На какую нить собрать жемчуг?
+                        </h2>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2020-05">Май 2020</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Секреты мастерства
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Ирина Шайдова
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-10.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          ВЯЗАНЫЕ ИГРУШКИ // ЕНОТИКИ ОБНИМАШКИ
+                        </h2>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2019-07">Июль 2019</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Мастер-классы
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Marvel Toys
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-6.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          С ЧЕГО НАЧАТЬ вязание игрушек амигуруми крючком из плюшевой пряжи
+                        </h2>
+                        <p class="card__cell-description">
+                          В данном видео я показываю, с чего начинается вязание игрушек из плюшевой пряжи. Я использую 2 вп, так как стандартный метод - кольцо амигуруми - не совсем подходит для фактурной пряжи и кольцо сложно затянуть.
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2019-01">Январь 2019</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Секреты мастерства
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Goozel Toys
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div 
+            class="tabs__content" 
+            id="tabpanel-2"
+            aria-labelledby="tab-2"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            <ul class="list">  
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-9.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          Игрушка "Спящий мышонок"
+                        </h2>
+                        <p class="card__cell-description">
+                          Простой мастер-класс по созданию игрушки в смешанной технике своими руками
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2025-03">Март 2025</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Мастер-классы
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Разное Рукоделие
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-1.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          Трендовое колье из жемчуга и цепей своими руками
+                        </h2>
+                        <p class="card__cell-description">
+                          Сегодня я покажу, как сделать трендовое колье из жемчуга, цепочек и бусин – все накрутить, навертеть и получится очень модно! В одном украшении будут интересно смотреться разные материалы и размеры бусин, цепочки потолще, цепочки потоньше, можно взять не одну, а две или три нити разного жемчуга – начните творить и дайте волю своей фантазии
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2024-03">Март 2024</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Мастер-классы
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Greenbird
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-5.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          Плюшевая собачка за 30 минут
+                        </h2>
+                        <p class="card__cell-description">
+                          Добро пожаловать на наше видео по вязанию собачки крючком одной деталью из плюшевой пряжи! В этом уроке мы покажем вам, как создать милого и приятного цельновязаного щенка, который станет отличным подарком.
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2024-02">Февраль 2024</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Мастер-классы
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Inna MK
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-2.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          Ежик из носков своими руками
+                        </h2>
+                        <p class="card__cell-description">
+                          Милый ежик из носков 🦔🧦 Игрушка из носков своими руками
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2022-08">Август 2022</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Мастер-классы
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Moth Art
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-10.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          ВЯЗАНЫЕ ИГРУШКИ // ЕНОТИКИ ОБНИМАШКИ
+                        </h2>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2019-07">Июль 2019</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Мастер-классы
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Marvel Toys
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div 
+            class="tabs__content" 
+            id="tabpanel-3"
+            aria-labelledby="tab-3"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            <ul class="list">
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-7.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          ✓ Моя история вязания + 5 советов начинающим вязальщицам мастерицам 🌿
+                        </h2>
+                        <p class="card__cell-description">
+                          История о моём старте в вязании и некоторые советы, которые поомгут начинающим вязальщицам мастерицам.
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2025-03">Март 2025</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Секреты мастерства
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Вязание для Вас 🌿
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-8.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          КАК делать милые украшения? 🍥
+                        </h2>
+                        <p class="card__cell-description">
+                          так как я веду свой магазин милых корейских украшений- держите туториал на милый брелок! 🍧 заранее спасибо за просмотр ♡︎
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2024-06">Июль 2024</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Секреты мастерства
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          bylishh¡
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-3.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          Создание украшений для начинающих: Инструменты и фурнитура
+                        </h2>
+                        <p class="card__cell-description">
+                          Привет! Я Настя и с моими видео вы научитесь создавать самые крутые украшения! 📿
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2021-11">Ноябрь 2021</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Секреты мастерства
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Sainty Mood
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-4.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          На какую нить собрать жемчуг?
+                        </h2>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2020-05">Май 2020</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Секреты мастерства
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Ирина Шайдова
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__body">
+                    <div class="card__grid">
+                      <div class="card__cell card__cell-video card__cell-wide">
+                        <div class="video-player" data-js-video-player>
+                          <video 
+                            src="./images/videos/example.mp4" 
+                            class="video-player__video"
+                            width="917" height="412"
+                            poster="./images/videos/poster-6.jpg"
+                            data-js-video-player-video
+                          ></video>
+                          <div 
+                            class="video-player__panel is-active" 
+                            data-js-video-player-panel
+                          >
+                            <button 
+                              type="button" 
+                              class="video-player__play-button"
+                              aria-label="Play video"
+                              title="Play video"
+                              data-js-video-player-play-button
+                            >
+                              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29ZM41.4663 26.1318C43.7167 27.382 43.7167 30.6183 41.4663 31.8685L25.1248 40.9471C22.9377 42.1621 20.25 40.5807 20.25 38.0788V19.9215C20.25 17.4196 22.9377 15.8381 25.1248 17.0531L41.4663 26.1318Z" fill="white"/>
+                              </svg> 
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__cell card__cell-wide">
+                        <h2 class="card__cell-title h4">
+                          С ЧЕГО НАЧАТЬ вязание игрушек амигуруми крючком из плюшевой пряжи
+                        </h2>
+                        <p class="card__cell-description">
+                          В данном видео я показываю, с чего начинается вязание игрушек из плюшевой пряжи. Я использую 2 вп, так как стандартный метод - кольцо амигуруми - не совсем подходит для фактурной пряжи и кольцо сложно затянуть.
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Дата публикации
+                        </p>
+                        <p class="card__cell-description h6">
+                          <time datetime="2019-01">Январь 2019</time>
+                        </p>
+                      </div>
+                      <div class="card__cell tile">
+                        <p class="card__cell-title">
+                          Категория
+                        </p>
+                        <p class="card__cell-description h6">
+                          Секреты мастерства
+                        </p>
+                      </div>
+                      <div class="card__cell tile card__cell-wide-on-mobile-s">
+                        <p class="card__cell-title">
+                          Автор
+                        </p>
+                        <p class="card__cell-description h6">
+                          Goozel Toys
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__body">
+        <address class="footer__address" itemscope itemtype="https://schema.org/PostalAddress">
+            <p>
+              <span itemprop="addressLocality">г. Тирасполь</span>,  
+              <span itemprop="streetAddress">Бульвар Гагарина</span>
+            </p>
+          </address>
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a 
+                href="https://www.instagram.com/behome_toys/"
+                class="socials__link" 
+                target="_blank"
+                aria-label="Instagram"
+                title="Instagram"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.34 5.46a1.2 1.2 0 1 0 1.2 1.2a1.2 1.2 0 0 0-1.2-1.2Zm4.6 2.42a7.59 7.59 0 0 0-.46-2.43a4.94 4.94 0 0 0-1.16-1.77a4.7 4.7 0 0 0-1.77-1.15a7.3 7.3 0 0 0-2.43-.47C15.06 2 14.72 2 12 2s-3.06 0-4.12.06a7.3 7.3 0 0 0-2.43.47a4.78 4.78 0 0 0-1.77 1.15a4.7 4.7 0 0 0-1.15 1.77a7.3 7.3 0 0 0-.47 2.43C2 8.94 2 9.28 2 12s0 3.06.06 4.12a7.3 7.3 0 0 0 .47 2.43a4.7 4.7 0 0 0 1.15 1.77a4.78 4.78 0 0 0 1.77 1.15a7.3 7.3 0 0 0 2.43.47C8.94 22 9.28 22 12 22s3.06 0 4.12-.06a7.3 7.3 0 0 0 2.43-.47a4.7 4.7 0 0 0 1.77-1.15a4.85 4.85 0 0 0 1.16-1.77a7.59 7.59 0 0 0 .46-2.43c0-1.06.06-1.4.06-4.12s0-3.06-.06-4.12ZM20.14 16a5.61 5.61 0 0 1-.34 1.86a3.06 3.06 0 0 1-.75 1.15a3.19 3.19 0 0 1-1.15.75a5.61 5.61 0 0 1-1.86.34c-1 .05-1.37.06-4 .06s-3 0-4-.06a5.73 5.73 0 0 1-1.94-.3a3.27 3.27 0 0 1-1.1-.75a3 3 0 0 1-.74-1.15a5.54 5.54 0 0 1-.4-1.9c0-1-.06-1.37-.06-4s0-3 .06-4a5.54 5.54 0 0 1 .35-1.9A3 3 0 0 1 5 5a3.14 3.14 0 0 1 1.1-.8A5.73 5.73 0 0 1 8 3.86c1 0 1.37-.06 4-.06s3 0 4 .06a5.61 5.61 0 0 1 1.86.34a3.06 3.06 0 0 1 1.19.8a3.06 3.06 0 0 1 .75 1.1a5.61 5.61 0 0 1 .34 1.9c.05 1 .06 1.37.06 4s-.01 3-.06 4ZM12 6.87A5.13 5.13 0 1 0 17.14 12A5.12 5.12 0 0 0 12 6.87Zm0 8.46A3.33 3.33 0 1 1 15.33 12A3.33 3.33 0 0 1 12 15.33Z"/>
+                </svg>            
+              </a>
+            </li>
+            <li class="socials__item">
+              <a 
+                href="https://web.telegram.org/a/" 
+                class="socials__link" 
+                target="_blank"
+                aria-label="Telegram"
+                title="Telegram"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12a12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472c-.18 1.898-.962 6.502-1.36 8.627c-.168.9-.499 1.201-.82 1.23c-.696.065-1.225-.46-1.9-.902c-1.056-.693-1.653-1.124-2.678-1.8c-1.185-.78-.417-1.21.258-1.91c.177-.184 3.247-2.977 3.307-3.23c.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345c-.48.33-.913.49-1.302.48c-.428-.008-1.252-.241-1.865-.44c-.752-.245-1.349-.374-1.297-.789c.027-.216.325-.437.893-.663c3.498-1.524 5.83-2.529 6.998-3.014c3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a 
+                href="https://vk.com" 
+                class="socials__link" 
+                target="_blank"
+                aria-label="VKontakte"
+                title="VKontakte"
+              >
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m9.489.004l.729-.003h3.564l.73.003l.914.01l.433.007l.418.011l.403.014l.388.016l.374.021l.36.025l.345.03l.333.033c1.74.196 2.933.616 3.833 1.516c.9.9 1.32 2.092 1.516 3.833l.034.333l.029.346l.025.36l.02.373l.025.588l.012.41l.013.644l.009.915l.004.98l-.001 3.313l-.003.73l-.01.914l-.007.433l-.011.418l-.014.403l-.016.388l-.021.374l-.025.36l-.03.345l-.033.333c-.196 1.74-.616 2.933-1.516 3.833c-.9.9-2.092 1.32-3.833 1.516l-.333.034l-.346.029l-.36.025l-.373.02l-.588.025l-.41.012l-.644.013l-.915.009l-.98.004l-3.313-.001l-.73-.003l-.914-.01l-.433-.007l-.418-.011l-.403-.014l-.388-.016l-.374-.021l-.36-.025l-.345-.03l-.333-.033c-1.74-.196-2.933-.616-3.833-1.516c-.9-.9-1.32-2.092-1.516-3.833l-.034-.333l-.029-.346l-.025-.36l-.02-.373l-.025-.588l-.012-.41l-.013-.644l-.009-.915l-.004-.98l.001-3.313l.003-.73l.01-.914l.007-.433l.011-.418l.014-.403l.016-.388l.021-.374l.025-.36l.03-.345l.033-.333c.196-1.74.616-2.933 1.516-3.833c.9-.9 2.092-1.32 3.833-1.516l.333-.034l.346-.029l.36-.025l.373-.02l.588-.025l.41-.012l.644-.013l.915-.009ZM6.79 7.3H4.05c.13 6.24 3.25 9.99 8.72 9.99h.31v-3.57c2.01.2 3.53 1.67 4.14 3.57h2.84c-.78-2.84-2.83-4.41-4.11-5.01c1.28-.74 3.08-2.54 3.51-4.98h-2.58c-.56 1.98-2.22 3.78-3.8 3.95V7.3H10.5v6.92c-1.6-.4-3.62-2.34-3.71-6.92Z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">
+          © <time datetime="2025">2025</time> Лукьян Никита
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

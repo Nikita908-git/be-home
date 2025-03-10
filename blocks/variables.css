@@ -1,0 +1,32 @@
+:root {
+  --color-light: #F5F3EF;
+  --color-dark: #2D2D2D;
+  --color-gray: #A8A8A8;
+  --color-accent: #9DD494;
+  --color-main: #3B6A37;
+  --color-main-dark: #304823;
+  --color-main-light: #58D200;
+  --color-red: #FF0000;
+
+  --border: 0.0625rem solid var(--color-light);
+
+  --shadow: 0 0 0 0.1875rem var(--color-dark);
+  --shadow-light: 0 0 0.75rem 0.25rem var(--color-gray);
+
+  --font-family-base: "Inter", sans-serif;
+  --font-family-accent: "Playfair Display", sans-serif;
+
+  --container-width: 100rem;
+  --container-padding-x: 1rem;
+
+  --transition-duration: 0.2s;
+
+  --100vw: calc(100vw - var(--scrollbar-width));
+}
+
+@media (width <= 90.06125rem) {
+  :root {
+    --container-width: 80rem;
+  }
+}
+
